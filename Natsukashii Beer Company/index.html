@@ -18,8 +18,11 @@
 <body id="top">  
 <!---------Navigation-------->
 <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-<div class="container-fluid">
-    <a class="navbar-brand logo" href=""><img src="">Natsukashii Beer Company</a>
+<div class="container-xl p-0">
+    <a class="navbar-brand" href="">
+        <h2 class="logo-header">Natsukashii</h2>
+        <h2 class="logo-header">Beer Company</h2>
+    </a>
     <button class="navbar-toggler" type="button" data-type="collapse" data-target="#navbarResponsive">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -42,29 +45,16 @@
 </div>
 </nav>
 
-<main class="col-xl-10 p-0 mx-auto">
+<main class="container-xl p-0 mx-auto">
 
-<!--------Carousel image slider-------->
-<div id="slides" class="carousel slide" data-ride="carousel">
-    <!-- <ul class="carousel-indicators">
-        <li data-target="#slides" data-slide-to="0" class="active"></li>
-        <li data-target="#slides" data-slide-to="1"></li>
-        <li data-target="#slides" data-slide-to="2"></li>
-    </ul> -->
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="./radovan-46Yad80Ynp4-unsplash.jpg">
-            <div class="carousel-caption">
-                <h1 class="">Natsukashii Beer Company</h1>
-            </div>
+<!--------Main Image with logo and nav-------->
+<div class="container-fluid">
+    <div class="row align-items-center justify-content-center">
+            <img src="./radovan-46Yad80Ynp4-unsplash.jpg" class="img-fluid">
+             <div class="main-title text-center">
+                <h1 class="text-light">Natsukashii</h1> 
+                <h1 class="text-light">Beer Company</h1>          
         </div>
-        <!--
-        <div class="carousel-item">
-            <img src="../Codecademy/greenlevelequestrian-w750-o.jpg">
-        </div>
-        <div class="carousel-item">
-            <img src="../Codecademy/Pasture.JPG">
-        </div>-->
     </div>
 </div>
 
@@ -73,7 +63,7 @@
 <div class="container-fluid bg-light">
     <div class="row jumbotron justify-content-center">
         <div class="col-xs-12 col-md-9 col-xl-10">
-            <p class="lead">OUR TAPROOM IS NOW OPEN! Come join us for a pint of your favorite brew, but first make sure to read our <em><strong>safety guidelines</strong></em> before your next visit.</p>
+            <p class="lead">OUR TAPROOM IS OPEN! Come join us for a pint of your favorite brew, but first make sure to read our <em><strong>safety guidelines</strong></em> before your next visit.</p>
         </div>
         <div class="col-xs-12 col-md-3  col-xl-2">
             <a href=""><button type="button" class="btn btn-outline-secondary btn-lg">Safety Guidelines</button></a>
@@ -87,10 +77,10 @@
 
 
 <!----------Welcome------------->
-<div id="about" class="container-fluid padding text-dark">
+<div id="about" class="container-fluid  text-dark">
     <div class="row text-center">
         <div class="col-12">
-            <h1 class="display-4">About Us</h1>
+            <h1 class="section-header">About Us</h1>
         </div>
     </div>
     <hr class="w-75">
@@ -113,19 +103,15 @@
 
 
 <!---------Fixed background image-------->
-<figure>
-    <div class="fixed-wrap">
-      <div id="fixed">
-        <img src="./glasses-919071_1920.jpg" class="img-fluid">
-      </div>
-    </div>
-</figure>
+<div class="container-fluid fixed-container p-0 pb-3">
+    <div id="fixed-img"></div>
+</div>
 
 <!-------Cards header------------------->
 <div id="brews" class="container-fluid">
 <div class="row text-center">
     <div class="col-12">
-        <h1 class="display-4">Our Brews</h1>
+        <h1 class="section-header">Our Brews</h1>
     </div>
     
 </div>
@@ -136,10 +122,10 @@
 
 <!------------Cards ------------------->
 <div class="container-fluid padding">
-<div class="row padding">
-    <div class="col-sm-6 col-md-4">
-        <div class="card shadow">
-          <img class="card-img-top" src="./beer-422138_640.jpg">
+<div class="row justify-content-center padding">
+    <div class="col-8 col-sm-6 col-md-4">
+        <div class="card shadow h-100">
+          <img class="card-img-top" src="./amber.jpg">
             <div class="card-body">
               <h4 class="card-title">Enlightened</h4>
               <ul>
@@ -152,23 +138,23 @@
             </div>
         </div>
     </div>
-    <div class="col-sm-6 col-md-4">
-        <div class="card shadow">
-          <img class="card-img-top" src="./hazyipa.jpg">
+    <div class="col-8 col-sm-6 col-md-4">
+        <div class="card shadow h-100">
+          <img class="card-img-top" src="./ipa.jpg">
           <div class="card-body">
             <h4 class="card-title">Ataraxis</h4>
             <ul>
                 <li>Style: Hazy IPA</li>
                 <li>ABV: 6.5%</li>
             </ul>
-            <p class="card-text">Experience serenity with this juicy and aromatic hazy india pale ale.</p>
+            <p class="card-text">Experience true serenity with this juicy and aromatic hazy india pale ale.</p>
               <a href="" class="btn btn-outline-secondary">See profile</a>
           </div>
        </div>
     </div>
-    <div class="col-sm-12 col-md-4">
-        <div class="card shadow">
-          <img class="card-img-top" src="./dark-beer-924823_640.jpg">
+    <div class="col-8 col-sm-8 col-md-4">
+        <div class="card shadow h-100">
+          <img class="card-img-top" src="./boketto.jpg">
           <div class="card-body">
             <h4 class="card-title">Boketto</h4>
             <ul>
@@ -188,7 +174,7 @@
 <div id="contact" class="container-fluid">
     <div class="row text-center">
         <div class="col-12">
-            <h1 class="display-4">Connect</h1>
+            <h1 class="section-header">Connect</h1>
         </div>
         
     </div>
@@ -213,11 +199,11 @@
 <!--Footer-->
 <footer class="bg-dark">
     
-<div class="container-fluid padding">
-<div class="row text-center">
+<div class="container-xl p-0 mx-auto">
+<div class="row text-center no-gutters">
     <div class="col-md-6">
-        <h2>Natsukashii Brewing</h2>
-
+        <h2 class="logo-footer">Natsukashii</h2>
+        <h2 class="logo-footer">Beer Company</h2>
         <hr class="light">
         <p>919-555-5555</p>
         <p>NatsukashiiBrewing@email.com</p>
@@ -238,13 +224,13 @@
         <p>Sunday: 12PM-8PM</p>
     </div>
 
-    <div class="col-12">
-        <a href="#top">Back to Top</a>
+    <div class="col-12 redirect">
+        <a href="#top" ><i class="fa fa-chevron-up"></i></a>
     </div>
     
     <div class="col-12">
         <hr class="light-100">
-        <h5 class="display-5">&copy; Natsukashii Beer Company</h5>
+        <h5 class="logo-header">&copy; Natsukashii Beer Company</h5>
     </div>
 
 </div>

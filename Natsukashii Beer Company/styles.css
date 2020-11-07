@@ -1,10 +1,11 @@
 /* Google fonts */
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700"); 
+@import url("https://fonts.googleapis.com/css?family=Grandstander:400,500,700"); 
 
 /*------COLORS: analogous----*/
 :root {
-  --primary-1: #12A5D1;
+  --primary-1: #286181;
   --secondary-1: #1246D1;
   --accent-1: #12D19D;
 }
@@ -19,43 +20,27 @@ body {
   color: #222;
 }
 
-.navbar {
-  padding: .8rem;
-}
-
-
-.navbar-nav {
-  padding-right: .2rem;
-}
-
-.nav-link {
-  font-size: 1.1em !important;
-}
-
-
-.carousel-inner img {
-  width: 100%;
-  height: 100%;
-}
-
-.carousel-caption {
+.main-title {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
-.carousel-caption h1 {
-  font-size: 4em;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 15px #000;;
+.main-title h1 {
+  font: small-caps 700 7.5em 'Grandstander';
+  text-shadow: 3px 3px 15px #000;
+  line-height: .7em;
 }
 
-.carousel-caption h3 {
-  font-size: 2em;
-  font-weight: 500;
-  text-shadow: 1px 1px 10px #000;
-  padding-bottom: 1rem;
+.logo-header {
+  font: small-caps 700 1.3em "Grandstander";
+  line-height: .5em;
+  text-align: center;
 }
+
+.logo-footer {
+  font: small-caps 700 2.5em "Grandstander";
+  line-height: .7em;
+}
+
 
 .jumbotron {
   padding: 1rem;
@@ -79,6 +64,21 @@ body {
   margin-bottom: 1rem;
 }
 
+#fixed-img {
+ background-image: url("./kyryll-ushakov-flENqflm6xU-unsplash.jpg");
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-position-y: 25%;
+ min-height: 12em;
+}
+
+.section-header {
+  font-size: 3rem;
+  font-family: Poppins;
+}
+
+
 .fa-code {
   color: #e54d26;
 }
@@ -99,6 +99,14 @@ body {
 .social a {
   font-size: 4.5em;
   padding: 3rem;
+}
+
+.redirect a {
+  font-size: 2rem;
+}
+
+.redirect a:hover {
+  color: var(--accent-1);
 }
 
 .fa-facebook {
@@ -150,11 +158,24 @@ hr.light-100 {
 
 
 /*----MEDIA QUERIES----*/
+@media (min-width: 993px) {
+  #fixed-img {
+    background-image: url("./glasses-919071_1920.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 15em;
+   }
+}
+
+
 @media (max-width: 992px) {
   .social a {
     font-size: 4em;
     padding: 2rem;
   }
+  
+
  
 }
 @media (max-width: 768px) {
@@ -163,28 +184,14 @@ hr.light-100 {
     padding: 1.2rem;
   }
 
-  .carousel-caption {
-    top: 45%;
-  }
-  
-  .carousel-caption h1 {
-    font-size: 3.5em;
-    
-  }
-  
-  .carousel-caption h3 {
-    font-size: 2em;
-    font-weight: 400;
-    padding-bottom: 0.2rem;
+  .main-title h1 {
+    font: small-caps 700 5.8em "Grandstander";
+    text-shadow: 3px 3px 15px #000;
+    line-height: .7em;
   }
 
-  .carousel-caption .btn {
-    font-size: 95%;
-    padding: 8px 14px;
-  }
-
-  .display-4 {
-    font-size: 2em;
+  .section-header {
+    font-size: 2.5em;
   }
 }
 @media (max-width: 576px) {
@@ -193,32 +200,23 @@ hr.light-100 {
     padding: 0.7rem;
   }
 
-  .carousel-caption {
-    top: 40%;
+  .main-title h1 {
+    font: small-caps 700 4em "Grandstander";
+    text-shadow: 3px 3px 15px #000;
+    line-height: .7em;
   }
+
   
-  .carousel-caption h1 {
-    font-size: 2.5em;
-  }
-  
-  .carousel-caption h3 {
-    font-size: 1.4em;
-    font-weight: 400;
-    padding-bottom: 0.2rem;
+
+  .section-header {
+    font-size: 2em;
   }
 
-  .carousel-caption .btn {
-    font-size: 90%;
-    padding: 4px 8px;
+  .padding {
+    padding-bottom: 1rem;
   }
 
-  .carousel-indicators {
-    display: none;
-  }
-
-  .display-4 {
-    font-size: 1.6em;
-  }
+ 
 }
 
 /*----Bootstrap Padding Fix----*/
