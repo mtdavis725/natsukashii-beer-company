@@ -216,6 +216,9 @@ hr.light-100 {
     padding-bottom: 1rem;
   }
 
+  #fixed-img {
+     display: none;
+  }
  
 }
 
