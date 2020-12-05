@@ -2,250 +2,277 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Natsukashii Brewing</title>
-  <!-- CSS stylesheet -->
-  <link href='./styles.css' type='text/css' rel='stylesheet'>
-    <!-- Bootstrap CSSminified -->
-   <link href="./bootstrap.min.css" rel="stylesheet">
-   <!--Bootstrap font awesome-->
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-   <!-- Bootstrap bundle: JS, Popper.js, and jQuery minified -->
-   <script src="./bootstrap.bundle.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natsukashii Brewing</title>
+
+    <!-- Bootstrap minified CSS -->
+    <link rel="stylesheet" type='text/css' href="./styles/bootstrap.min.css">
+
+    <!-- Bootstrap minified JS, Popper.js, and jQuery -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="./scripts/bootstrap.bundle.min.js"></script>
+
+    <!-- CSS stylesheet -->
+    <link rel='stylesheet' type='text/css' href='./styles/styles.css'>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- FavIcon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+
 </head>
 
-<body id="top">  
-<!---------Navigation-------->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-<div class="container-xl p-0">
-    <a class="navbar-brand" href="">
-        <h2 class="logo-header">Natsukashii</h2>
-        <h2 class="logo-header">Beer Company</h2>
-    </a>
-    <button class="navbar-toggler" type="button" data-type="collapse" data-target="#navbarResponsive">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#top">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#brews">Our Brews</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-            </li>
-        </ul>
-    </div>  
-</div>
-</nav>
+<body id="home" data-spy="scroll" data-target="#navbar">
+    <!---------Navigation-------->
+    <nav id="navbar" class="navbar navbar-dark bg-dark navbar-expand-md sticky-top">
 
-<main class="container-xl p-0 mx-auto">
-
-<!--------Main Image with logo and nav-------->
-<div class="container-fluid">
-    <div class="row align-items-center justify-content-center">
-            <img src="./radovan-46Yad80Ynp4-unsplash.jpg" class="img-fluid">
-             <div class="main-title text-center">
-                <h1 class="text-light">Natsukashii</h1> 
-                <h1 class="text-light">Beer Company</h1>          
+        <a class="navbar-brand" href="#home">
+            <h2 class="logo-header">Natsukashii</h2>
+            <h2 class="logo-header">Beer Company</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-type="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#brews">Our Brews</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
-    </div>
-</div>
 
-
-<!----------Jumbotron------->
-<div class="container-fluid bg-light">
-    <div class="row jumbotron justify-content-center">
-        <div class="col-xs-12 col-md-9 col-xl-10">
-            <p class="lead">OUR TAPROOM IS OPEN! Come join us for a pint of your favorite brew, but first make sure to read our <em><strong>safety guidelines</strong></em> before your next visit.</p>
-        </div>
-        <div class="col-xs-12 col-md-3  col-xl-2">
-            <a href=""><button type="button" class="btn btn-outline-secondary btn-lg">Safety Guidelines</button></a>
-        </div>
-        <div class="col-xs-12 col-sm-10 col-lg-8 col-xl-7 ">
-            <button type="button" class="btn btn-dark btn-outline-light btn-lg w-100">PREFER TO ORDER FOR DELIVERY OR CURBSIDE PICKUP?</button>
-        </div>
-    </div>
-</div>
+    </nav>
 
 
 
-<!----------Welcome------------->
-<div id="about" class="container-fluid  text-dark">
-    <div class="row text-center">
-        <div class="col-12">
-            <h1 class="section-header">About Us</h1>
-        </div>
-    </div>
-    <hr class="w-75">
-</div>
+    <main class="container-xl p-0 mx-auto">
 
-<div class="container-fluid text-dark padding">
-    <div class="row mx-auto justify-content-center">
-        <div class="col-12">
-            <p class="lead">We are a local craft brewery and taproom, located in Raleigh, NC, humbly devoted to producing the highest-quality, joy-invoking ales and lagers that make you want to say...</p>
-            <p></p>
-        </div>
-        <div class="col-10 border rounded shadow">
-            <h3 class="display-5">Natsukashii</h3>
-            <p class="lead">Prounouced "Not&middot;suu&middot;kaw&middot;she"</p>  
-            <blockquote class="blockquote">Japanese word for when something evokes a fond memory bringing joy and gratitude for the past rather than a desire to return to it.</blockquote>
-        </div>
-    </div>
-</div>
-
-
-
-<!---------Fixed background image-------->
-<div class="container-fluid fixed-container p-0 pb-3">
-    <div id="fixed-img"></div>
-</div>
-
-<!-------Cards header------------------->
-<div id="brews" class="container-fluid">
-<div class="row text-center">
-    <div class="col-12">
-        <h1 class="section-header">Our Brews</h1>
-    </div>
-    
-</div>
-<hr class="w-75">
-</div>
-
-
-
-<!------------Cards ------------------->
-<div class="container-fluid padding">
-<div class="row justify-content-center padding">
-    <div class="col-8 col-sm-6 col-md-4">
-        <div class="card shadow h-100">
-          <img class="card-img-top" src="./amber.jpg">
-            <div class="card-body">
-              <h4 class="card-title">Enlightened</h4>
-              <ul>
-                  <li>Style: Amber</li>
-                  <li>ABV: 4.9%</li>
-              </ul>
-              <p class="card-text">Find inner peace with this refreshingly crisp and light-bodied amber ale.</p>
-              
-              <a href="" class="btn btn-outline-secondary">See profile</a>
+        <!--------Main Image with logo and nav-------->
+        <div  class="container-fluid banner">
+            <div class="row justify-content-center align-items-center h-100">
+                <div class="col-12 main-title text-center">
+                    <h1>Natsukashii</h1>
+                    <h1>Beer Company</h1>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col-8 col-sm-6 col-md-4">
-        <div class="card shadow h-100">
-          <img class="card-img-top" src="./ipa.jpg">
-          <div class="card-body">
-            <h4 class="card-title">Ataraxis</h4>
-            <ul>
-                <li>Style: Hazy IPA</li>
-                <li>ABV: 6.5%</li>
-            </ul>
-            <p class="card-text">Experience true serenity with this juicy and aromatic hazy india pale ale.</p>
-              <a href="" class="btn btn-outline-secondary">See profile</a>
-          </div>
-       </div>
-    </div>
-    <div class="col-8 col-sm-8 col-md-4">
-        <div class="card shadow h-100">
-          <img class="card-img-top" src="./boketto.jpg">
-          <div class="card-body">
-            <h4 class="card-title">Boketto</h4>
-            <ul>
-                <li>Style: Stout</li>
-                <li>ABV: 8%</li>
-            </ul>
-            <p class="card-text">Let your mind wander with this velvety smooth cinnamon spiced stout.</p>
-              <a href="" class="btn btn-outline-secondary">See profile</a>
-          </div>
-       </div>
-    </div>
-</div>
-</div>
 
-<!--Connect-->
-<!-------Cards header------------------->
-<div id="contact" class="container-fluid">
-    <div class="row text-center">
-        <div class="col-12">
-            <h1 class="section-header">Connect</h1>
-        </div>
-        
-    </div>
-    <hr class="w-75">
-    </div>
 
-<div class="container-fluid padding">
-    <div class="row text-center padding">
-        <div class="col-12 social padding">
-            <a href="#" class=""><i class="fa fa-facebook"></i></a>
-            <a href="#" class=""><i class="fa fa-twitter"></i></a>
-                
-            <a href="#" class=""><i class="fa fa-google-plus"></i></a>
-            <a href="#" class=""><i class="fa fa-instagram"></i></a>
-            <a href="#" class=""><i class="fa fa-youtube"></i></a>
-
+        <!----------Jumbotron------->
+        <div class="container-fluid">
+            <div class="row jumbotron justify-content-center">
+                <div class="col-xs-12 col-md-9 col-xl-10">
+                    <p class="lead">OUR TAPROOM IS OPEN! Come join us for a pint of your favorite brew, but first make
+                        sure to read our <em><strong>safety guidelines</strong></em> before your next visit.</p>
+                </div>
+                <div class="col-xs-12 col-md-3  col-xl-2">
+                    <a href=""><button type="button" class="btn btn-outline-dark btn-lg">Safety
+                            Guidelines</button></a>
+                </div>
+                <div class="col-xs-12 col-sm-10 col-lg-8 col-xl-7 ">
+                    <button type="button" class="btn btn-dark btn-outline-light btn-lg w-100">PREFER TO ORDER FOR
+                        DELIVERY OR CURBSIDE PICKUP?</button>
+                </div>
+            </div>
         </div>
 
-    </div>
-</div>
-</main>
-<!--Footer-->
-<footer class="bg-dark">
-    
-<div class="container-xl p-0 mx-auto">
-<div class="row text-center no-gutters">
-    <div class="col-md-6">
-        <h2 class="logo-footer">Natsukashii</h2>
-        <h2 class="logo-footer">Beer Company</h2>
-        <hr class="light">
-        <p>919-555-5555</p>
-        <p>NatsukashiiBrewing@email.com</p>
-        <p>1200 Stayzen Blvd.</p>
-        <p>Raleigh, NC, 27603</p>
-    </div>
 
-    <div class="col-md-6">
-        <hr class="light">
-        <h5>Taproom Hours</h5>
-        <hr class="light">
-        <p>Monday: Closed</p>
-        <p>Tuesday: Closed</p>
-        <p>Wednesday: 2PM-10PM</p>
-        <p>Thursday: 2PM-10PM</p>
-        <p>Friday: 12PM-12AM</p>
-        <p>Saturday: 12PM-12AM</p>
-        <p>Sunday: 12PM-8PM</p>
+
+        <!----------Welcome------------->
+        <div id="about" class="container-fluid">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h1 class="section-header">About Us</h1>
+                </div>
+            </div>
+            <hr class="w-75">
+        </div>
+
+        <div class="container-fluid padding">
+            <div class="row mx-auto justify-content-center">
+                <div class="col-12">
+                    <p class="lead">We are a local craft brewery and taproom, located in Raleigh, NC, humbly devoted to
+                        producing the highest-quality, joy-invoking ales and lagers that make you want to say...</p>
+                    <p></p>
+                </div>
+                <div class="col-10 border rounded shadow">
+                    <h3 class="display-5">Natsukashii</h3>
+                    <p class="lead">Prounouced "Not&middot;suu&middot;kaw&middot;she"</p>
+                    <blockquote class="blockquote">Japanese word for when something evokes a fond memory bringing joy
+                        and gratitude for the past rather than a desire to return to it.</blockquote>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!---------Fixed background image-------->
+        <div class="container-fluid fixed-container p-0 pb-3">
+            <div id="fixed-img"></div>
+        </div>
+
+        <!-------Cards header------------------->
+        <div id="brews" class="container-fluid">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h1 class="section-header">Our Brews</h1>
+                </div>
+
+            </div>
+            <hr class="w-75">
+        </div>
+
+
+
+        <!------------Cards ------------------->
+        <div class="container-fluid padding">
+            <div class="row justify-content-center padding">
+                <div class="col-8 col-sm-6 col-md-4">
+                    <div class="card shadow h-100">
+                        <img class="card-img-top" src="./images/amber.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">Enlightened</h4>
+                            <ul>
+                                <li>Style: Amber</li>
+                                <li>ABV: 4.9%</li>
+                            </ul>
+                            <p class="card-text">Find inner peace with this refreshingly crisp and light-bodied amber
+                                ale.</p>
+
+                            <a href="" class="btn btn-outline-dark">See profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-sm-6 col-md-4">
+                    <div class="card shadow h-100">
+                        <img class="card-img-top" src="./images/ipa.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">Ataraxis</h4>
+                            <ul>
+                                <li>Style: Hazy IPA</li>
+                                <li>ABV: 6.5%</li>
+                            </ul>
+                            <p class="card-text">Experience true serenity with this juicy and aromatic hazy india pale
+                                ale.</p>
+                            <a href="" class="btn btn-outline-dark">See profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-sm-8 col-md-4">
+                    <div class="card shadow h-100">
+                        <img class="card-img-top" src="./images/boketto.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">Boketto</h4>
+                            <ul>
+                                <li>Style: Stout</li>
+                                <li>ABV: 8%</li>
+                            </ul>
+                            <p class="card-text">Let your mind wander with this velvety smooth cinnamon spiced stout.
+                            </p>
+                            <a href="" class="btn btn-outline-dark">See profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Connect-->
+        <!-------Cards header------------------->
+        <div id="contact" class="container-fluid">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h1 class="section-header">Connect</h1>
+                </div>
+
+            </div>
+            <hr class="w-75">
+        </div>
+
+        <div class="container-fluid padding">
+            <div class="row text-center padding">
+                <div class="col-12 social padding">
+                    <a href="#" class=""><i class="fa fa-facebook"></i></a>
+                    <a href="#" class=""><i class="fa fa-twitter"></i></a>
+
+                    <a href="#" class=""><i class="fa fa-google-plus"></i></a>
+                    <a href="#" class=""><i class="fa fa-instagram"></i></a>
+                    <a href="#" class=""><i class="fa fa-youtube"></i></a>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!--Footer-->
+    <footer class="bg-dark">
+        <div class="container-xl p-0 mx-auto">
+            <div class="row text-center no-gutters">
+                <div class="col-md-6">
+                    <h2 class="logo-footer">Natsukashii</h2>
+                    <h2 class="logo-footer">Beer Company</h2>
+                    <hr class="light">
+                    <p>919-555-5555</p>
+                    <p>NatsukashiiBrewing@email.com</p>
+                    <p>1200 Stayzen Blvd.</p>
+                    <p>Raleigh, NC, 27603</p>
+                </div>
+
+                <div class="col-md-6">
+                    <hr class="light">
+                    <h5>Taproom Hours</h5>
+                    <hr class="light">
+                    <p>Monday: Closed</p>
+                    <p>Tuesday: Closed</p>
+                    <p>Wednesday: 2PM-10PM</p>
+                    <p>Thursday: 2PM-10PM</p>
+                    <p>Friday: 12PM-12AM</p>
+                    <p>Saturday: 12PM-12AM</p>
+                    <p>Sunday: 12PM-8PM</p>
+                </div>
+
+                <div class="col-12 redirect">
+                    <a href="#home"><i class="fa fa-chevron-up"></i></a>
+                </div>
+
+                <div class="col-12">
+                    <hr class="light-100">
+                    <h5 class="logo-header">&copy; Natsukashii Beer Company</h5>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
     </div>
-
-    <div class="col-12 redirect">
-        <a href="#top" ><i class="fa fa-chevron-up"></i></a>
     </div>
-    
-    <div class="col-12">
-        <hr class="light-100">
-        <h5 class="logo-header">&copy; Natsukashii Beer Company</h5>
-    </div>
-
-</div>
-</div>
-
-</footer>
-
-          
-          
-       
-    
-</div>
-</div>
 
 </body>
-  
+
 </html>
-  
