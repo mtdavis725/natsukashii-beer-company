@@ -1,13 +1,18 @@
 /* Google fonts */
-
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700"); 
 @import url("https://fonts.googleapis.com/css?family=Grandstander:400,500,700"); 
+
+html {
+  /* scroll-behavior: smooth; */
+}
 
 
 body {
   font-family: 'Poppins', sans-serif;
   color: #222;
   position: relative;
+  width: 100%;
+  height: auto;
 }
 
 
@@ -19,11 +24,21 @@ main {
   background-color: #161616;
 }
 
+.main-title {
+  width: 100%;
+  position: relative;
+  margin-top: -60%;
+}
+
 .main-title h1 {
   font: small-caps 700 7.5em 'Grandstander';
+  font-size: clamp(6rem, 12vw, 7.5rem);
   line-height: .7em;
   color: #f5f5f5;
+  text-shadow: 3px 3px 6px black;
   position: absolute;
+  z-index: 1;
+  top: 40%;
 }
 
 .logo-header {
@@ -75,7 +90,6 @@ main {
 
 .section-header {
   font-size: 3rem;
-  font-family: Poppins;
 }
 
 
@@ -207,8 +221,6 @@ hr.light-100 {
     line-height: .7em;
   }
 
-  
-
   .section-header {
     font-size: 2em;
   }
@@ -224,10 +236,3 @@ hr.light-100 {
 [class*="col-"] {
   padding: 1rem;
 }
-
-
-/*bg-img options:
-1  https://images.photowall.com/products/58341/foggy-forest-4.jpg?h=699&q=85
-2  https://wallpaperaccess.com/full/295499.jpg
-3  https://eskipaper.com/images/forest-wallpaper-13.jpg
-*/
