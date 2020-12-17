@@ -2,10 +2,15 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap"); 
 @import url("https://fonts.googleapis.com/css?family=Grandstander:400,500,700&display=swap"); 
 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
-
 
 body {
   background-image: url("../images/body-background.jpg");
@@ -18,11 +23,13 @@ body {
   height: auto;
 }
 
-
 main {
   background-color: #f9f9f9;
 }
 
+hr {
+  margin: .8rem auto 1rem;
+}
 
 .navbar {
   background-color: #161616;
@@ -56,7 +63,6 @@ main {
   line-height: .7em;
 }
 
-
 .jumbotron {
   padding: 1rem;
   border-radius: 0;
@@ -79,8 +85,7 @@ main {
 .welcome hr {
   border-top: 2px solid #b4b4b4;
   width: 95%;
-  margin-top: 0.3rem;
-  margin-bottom: 1rem;
+  margin: .3rem auto 1rem;
 }
 
 #fixed-img {
@@ -89,13 +94,12 @@ main {
  background-repeat: no-repeat;
  background-attachment: fixed;
  background-position-y: 25%;
- min-height: 12rem;
+ min-height: 13rem;
 }
 
 .section-header {
   font-size: 3rem;
 }
-
 
 .fa-code {
   color: #e54d26;
@@ -164,15 +168,14 @@ footer a {
 hr.light {
   border-top: 1px solid #d5d5d5;
   width: 75%;
-  margin-top: 0.8rem;
-  margin-bottom: 1rem;;
+  margin: .8rem auto 1rem;
 }
 
 hr.light-100 {
   border-top: 1px solid #d5d5d5;
   width: 100%;
   margin-top: 0.8rem;
-  margin-bottom: 1rem;;
+  margin-bottom: 1rem;
 }
 
 
@@ -187,16 +190,13 @@ hr.light-100 {
    }
 }
 
-
 @media (max-width: 992px) {
   .social a {
     font-size: 4em;
     padding: 2rem;
   }
-  
-
- 
 }
+
 @media (max-width: 768px) {
   .social a {
     font-size: 2.5em;
@@ -213,6 +213,7 @@ hr.light-100 {
     font-size: 2.5em;
   }
 }
+
 @media (max-width: 576px) {
   .social a {
     font-size: 2em;
@@ -231,9 +232,7 @@ hr.light-100 {
 
   .padding {
     padding-bottom: 1rem;
-  }
-
- 
+  } 
 }
 
 /*----Bootstrap Padding Fix----*/
