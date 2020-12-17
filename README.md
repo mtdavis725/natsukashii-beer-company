@@ -1,3 +1,3 @@
-# natsukashii-beer-company
+## index.html
 Responsive, single page, example company website
 Built with HTML, CSS and Bootstrap
