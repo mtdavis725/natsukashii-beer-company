@@ -51,12 +51,6 @@ header h1 span {
   display: block;
 }
 
-.logo-header {
-  font: small-caps 700 1.3em "Grandstander";
-  line-height: .5em;
-  text-align: center;
-}
-
 .logo-footer {
   font: small-caps 700 2.5em "Grandstander";
   line-height: .7em;
@@ -171,6 +165,10 @@ hr.light {
 }
 
 @media (max-width: 576px) {
+  .navbar-brand img {
+    width: 3.5rem;
+  }
+
   #fixed-img {
     display: none;
    }
@@ -181,7 +179,7 @@ hr.light {
   }
 
   header h1 {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   .section-header {
