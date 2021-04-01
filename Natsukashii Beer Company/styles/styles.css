@@ -1,14 +1,13 @@
 /* Google fonts */
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap"); 
 @import url("https://fonts.googleapis.com/css?family=Grandstander:400,500,700&display=swap"); 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
 
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-html {
   scroll-behavior: smooth;
 }
 
@@ -20,7 +19,7 @@ body {
   color: #222;
   position: relative;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 main {
@@ -35,21 +34,22 @@ hr {
   background-color: #161616;
 }
 
-.main-title {
-  width: 100%;
-  position: relative;
-  margin-top: -60%;
+header {
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: calc(100vw * 0.5);
+  max-height: 600px;
 }
 
-.main-title h1 {
-  font: small-caps 700 7.5em 'Grandstander';
-  font-size: clamp(6rem, 12vw, 7.5rem);
-  line-height: .7em;
+header h1 {
+  font: small-caps 700 6em 'Grandstander';
   color: #f5f5f5;
   text-shadow: 3px 3px 6px black;
-  position: absolute;
-  z-index: 1;
-  top: 40%;
+}
+
+header h1 span {
+  display: block;
 }
 
 .logo-header {
@@ -63,72 +63,34 @@ hr {
   line-height: .7em;
 }
 
-.jumbotron {
-  padding: 1rem;
-  border-radius: 0;
-}
-
-.jumbotron .btn-dark {
-  background-color: #222;
-}
-
 .padding {
-  padding-bottom: 2rem;
-}
-
-.welcome {
-  width: 75%;
-  margin: 0 auto;
-  padding-top: 1.5rem;
-}
-
-.welcome hr {
-  border-top: 2px solid #b4b4b4;
-  width: 95%;
-  margin: .3rem auto 1rem;
+  padding-bottom: 3rem;
 }
 
 #fixed-img {
- background-image: url("../images/kyryll-ushakov-flENqflm6xU-unsplash.jpg");
+ background-image: url("../images/glasses-919071_1920.jpg");
  background-size: cover;
  background-repeat: no-repeat;
  background-attachment: fixed;
  background-position-y: 25%;
- min-height: 13rem;
+ min-height: 15rem;
 }
 
 .section-header {
-  font-size: 3rem;
-}
-
-.fa-code {
-  color: #e54d26;
-}
-
-.fa-bold {
-  color: #563d7c;
-}
-
-.fa-css3 {
-  color: #2163af;
-}
-
-.fa-code, .fa-bold, .fa-css3 {
-  font-size: 4em;
-  margin: 1rem;
+  font-size: 3em;
 }
 
 .social a {
-  font-size: 4.5em;
-  padding: 3rem;
+  font-size: 4.5rem;
+  padding: 3em;
 }
 
 .redirect a {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .redirect a:hover {
-  color: var(--accent-1);
+  color: #E37D22;
 }
 
 .fa-facebook {
@@ -161,6 +123,7 @@ footer {
   padding-top: 2rem;
 }
 
+
 footer a {
   color: #f5f5f5;
 }
@@ -171,31 +134,23 @@ hr.light {
   margin: .8rem auto 1rem;
 }
 
-hr.light-100 {
-  border-top: 1px solid #d5d5d5;
-  width: 100%;
-  margin-top: 0.8rem;
-  margin-bottom: 1rem;
-}
-
 
 /*----MEDIA QUERIES----*/
-@media (min-width: 993px) {
+@media (max-width: 993px) {
   #fixed-img {
-    background-image: url("../images/glasses-919071_1920.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 15em;
+    min-height: 12em;
    }
-}
 
-@media (max-width: 992px) {
-  .social a {
-    font-size: 4em;
+   header h1 {
+     font-size: 5em;
+   }
+
+   .social a {
+    font-size: 4.5em;
     padding: 2rem;
   }
 }
+
 
 @media (max-width: 768px) {
   .social a {
@@ -203,27 +158,31 @@ hr.light-100 {
     padding: 1.2rem;
   }
 
-  .main-title h1 {
-    font: small-caps 700 5.8em "Grandstander";
-    text-shadow: 3px 3px 15px #000;
-    line-height: .7em;
+  header h1 {
+    font-size: 3.8em;
   }
 
   .section-header {
     font-size: 2.5em;
   }
+
+  header{
+    max-height: 81vh;
+  }
 }
 
 @media (max-width: 576px) {
+  #fixed-img {
+    display: none;
+   }
+
   .social a {
     font-size: 2em;
     padding: 0.7rem;
   }
 
-  .main-title h1 {
-    font: small-caps 700 4em "Grandstander";
-    text-shadow: 3px 3px 15px #000;
-    line-height: .7em;
+  header h1 {
+    font-size: 3em;
   }
 
   .section-header {
